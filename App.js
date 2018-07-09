@@ -11,7 +11,7 @@ import consumo from './src/components/consumo/consumo';
 import Miercoles from './src/components/consumo/miercoles';
 
 const Routes = createStackNavigator({
-  Miercoles:Miercoles,
+
 Login:Login,
 
 consumo:consumo,
@@ -29,7 +29,7 @@ groups: groups,
 
 {
 
-  initialRoute: 'Miercoles'
+  initialRoute: 'Login'
 });
 
 export default class App extends React.Component{
