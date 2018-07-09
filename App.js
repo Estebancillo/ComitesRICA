@@ -21,9 +21,9 @@ const Routes = createStackNavigator({
   groups: groups,
 },
 {
-  initialRoute: 'Miercoles'
-}
-);
+
+  initialRoute: 'Login'
+});
 
 export default class App extends React.Component{
   render(){
