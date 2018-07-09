@@ -6,6 +6,10 @@ import Login from '../Login/Login';
 
 export default class Inicio extends Component {
 
+  static navigationOptions = {
+    header: null
+  };
+
   state = {
     loggedIn: null
   }
