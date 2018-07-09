@@ -10,5 +10,5 @@ import * as firebase from 'firebase';
     storageBucket: "comitesrica-393a6.appspot.com",
     messagingSenderId: "379893927399"
   };
-  
+
   firebase.initializeApp(config);
