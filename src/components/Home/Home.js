@@ -39,7 +39,7 @@ updateMenu(isOpen){
 			<Container>
 				<SideMenu menu={<Menu/>} isOpen={this.state.isOpen} onChange={(isOpen)=> this.updateMenu(isOpen)}>
 							<Header  toggle={this.toggle.bind(this)} />
-							<View Style={styles.Container} >
+							<View Style={styles.ContainerHome} >
 								<Text>
 									Welcome!
 								</Text>
@@ -72,7 +72,7 @@ fontWeigth:'bold',
 fontSize:25
 
 },
-Container:{
+ContainerHome:{
 	flex:1,
 	backgroundColor:'white'
 }
