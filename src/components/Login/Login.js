@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, ImageBackground, Image, Alert } from 'react-native';
 import { Form, Item, Input, Label, Button } from 'native-base';
 import { NavigationActions } from 'react-navigation';
+import * as firebase from 'firebase';
 
 import ImageBack from '../../assets/image/img1.png';
 import Icon from '../../assets/image/Icon.png';
@@ -9,7 +10,6 @@ import Icon from '../../assets/image/Icon.png';
 export default class Login extends React.Component{
   static navigationOptions= {
   header:null
-
   };
 
   constructor(props){
@@ -23,7 +23,7 @@ super(props);
   onLoginPress=()=>{
     firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
       .then(()=>{
-        this.props.navigation.push('Home')
+        navigation.push('Home')
       }, (error)=>{
         Alert.alert('Revisa tu usuario y contraseña');
       });
