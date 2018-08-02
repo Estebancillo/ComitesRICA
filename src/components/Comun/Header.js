@@ -12,7 +12,7 @@ const Header = props => {
 		</TouchableWithoutFeedback>
 
 
-			<Image  style={styles.logo} source={require('../../assets/image/img3.png')}/>
+			<Image   source={require('../../assets/image/img3.png')}/>
 
 
 
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
 	logo: {
 	width: 140,
 	height: 60,
-	
+	backgroundColor:'white'
 }
 })
 export default Header

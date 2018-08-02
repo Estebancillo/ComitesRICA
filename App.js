@@ -7,11 +7,9 @@ import Login from './src/components/Login/Login';
 import Register from './src/components/Login/Register';
 import Map from './src/components/Map/Map';
 import consumo from './src/components/consumo/consumo';
-import ImagePicker from './src/components/consumo/ImagePicker';
-import Inicio from './src/components/Home/Inicio';
+import Inicio from './src/components/Home/Inicio'
 
 const Routes = createStackNavigator({
-  ImagePicker:ImagePicker,
   Inicio: Inicio,
   Login:Login,
   consumo:consumo,
@@ -21,7 +19,7 @@ const Routes = createStackNavigator({
   groups: groups,
 },
 {
-  initialRoute: 'ImagePicker'
+  initialRoute: 'Inicio'
 
 });
 
